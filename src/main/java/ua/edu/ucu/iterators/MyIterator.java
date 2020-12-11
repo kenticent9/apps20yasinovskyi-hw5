@@ -4,10 +4,10 @@ import java.util.Iterator;
 
 public class MyIterator implements Iterator<Integer> {
     private int curPos = 0;
-    Integer[] integers;
+    private Integer[] integers;
 
     public MyIterator(Integer[] i) {
-        integers = i;
+        integers = i.clone();
     }
 
     @Override

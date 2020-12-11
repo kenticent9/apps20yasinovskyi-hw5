@@ -53,7 +53,8 @@ public class AsIntStream implements IntStream {
     }
 
     @Override
-    public Integer min() {Integer i;
+    public Integer min() {
+        Integer i;
         Integer myMin = 0;
         for (Iterator<Integer> it = iterator; it.hasNext(); ) {
             if ((i = it.next()) < myMin) {
