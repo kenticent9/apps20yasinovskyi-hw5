@@ -27,7 +27,7 @@ public class FilterIterator implements Iterator<Integer> {
     @Override
     public Integer next() {
         if (nextInt == null) {
-            return null;
+            throw new NoSuchElementException();
         }
         return nextInt;
     }
